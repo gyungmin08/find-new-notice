@@ -31,7 +31,6 @@ class FINDNEWNOTICE:
     def checkNewNotice(self):
         self.driver.get(self.page_url)
         self.driver.implicitly_wait(10)
-        self.driver.get(self.page_url)
 
         text_len = len(self.driver.find_element(By.CSS_SELECTOR, "#board_area > table > tbody").text.split("\n"))
         table = []
